@@ -7,4 +7,4 @@ Basic React application to add contacts and schedule them
     - React
     - CSS
 
-### Live deployment comming soon
+### View live deployment here: https://petrichor-planner.netlify.app/
