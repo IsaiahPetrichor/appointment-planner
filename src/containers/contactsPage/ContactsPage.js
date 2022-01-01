@@ -18,7 +18,7 @@ export const ContactsPage = (props) => {
 			setPhone('');
 			setEmail('');
 		} else {
-			console.log('Error, duplicate entry');
+			window.alert('ERROR: Duplicate Entry!\n- check name and try again');
 		}
 	};
 

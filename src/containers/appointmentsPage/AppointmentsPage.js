@@ -14,12 +14,15 @@ export const AppointmentsPage = (props) => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		addAppointment(title, contact, date, time);
-		console.log('pass');
-		setTitle('');
-		setContact('');
-		setDate('');
-		setTime('');
+		if (contact && contact !== 'default') {
+			addAppointment(title, contact, date, time);
+			setTitle('');
+			setContact('');
+			setDate('');
+			setTime('');
+		} else {
+			window.alert('ERROR: Select a Contact!');
+		}
 	};
 
 	return (
